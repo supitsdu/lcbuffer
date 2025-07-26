@@ -1,6 +1,6 @@
 {
   "name": "lcbuffer",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "type": "module",
   "description": "Lightweight, efficient, and flexible line-based buffer management library for JavaScript and TypeScript, supporting references, events, and thread-safe operations.",
   "types": "dist/main.d.ts",
