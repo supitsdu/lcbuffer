@@ -36,15 +36,8 @@
   "packageManager": "pnpm@10.13.1",
   "devDependencies": {
     "@eslint/js": "^9.31.0",
-    "@rollup/plugin-commonjs": "^28.0.6",
-    "@rollup/plugin-json": "^6.1.0",
     "@rollup/plugin-node-resolve": "^16.0.1",
-    "@rollup/plugin-replace": "^6.0.2",
-    "@rollup/plugin-swc": "^0.4.0",
     "@rollup/plugin-typescript": "^12.1.4",
-    "@swc/core": "^1.13.2",
-    "@swc/helpers": "^0.5.17",
-    "async-mutex": "latest",
     "eslint": "^9.31.0",
     "eslint-config-prettier": "^10.1.8",
     "globals": "^16.3.0",
@@ -52,11 +45,12 @@
     "rollup": "^4.45.1",
     "typescript": "^5.8.3",
     "typescript-eslint": "^8.38.0",
-    "vitest": "^3.2.4"
-  },
-  "dependencies": {
+    "vitest": "^3.2.4",
     "rollup-plugin-bundlens": "^0.1.1",
     "rollup-plugin-dts": "^6.2.1",
     "rollup-plugin-esbuild": "^6.2.1"
+  },
+  "dependencies": {
+    "async-mutex": "latest"
   }
 }
