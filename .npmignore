@@ -1,0 +1,13 @@
+src
+build/
+rollup.config.js
+tsconfig.json
+vitest.config.ts
+pnpm-lock.yaml
+.eslintrc*
+eslint.config.js
+.prettier*
+*.md
+__tests__/
+*.test.*
+*.spec.*
