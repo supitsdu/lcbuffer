@@ -9,7 +9,11 @@ const external = ['async-mutex'];
 export default [
   {
     input: ['src/index.ts'],
-    plugins: [resolve(), typescript(), reportDetails()],
+    plugins: [
+      resolve(),
+      typescript({ exclude: ['src/__tests__/**'] }), // Exclude tests
+      reportDetails()
+    ],
     output: { dir: 'build', format: 'es', exports: 'auto' },
     external,
   },
@@ -27,7 +31,11 @@ export default [
   },
   {
     input: 'build/src/index.d.ts',
-    plugins: [resolve(), dts(), reportDetails()],
+    plugins: [
+      resolve(),
+      dts({ exclude: ['src/__tests__/**'] }), // Exclude tests from dts
+      reportDetails()
+    ],
     output: { file: 'dist/main.d.ts', format: 'esm', exports: 'auto' },
     external,
   },
