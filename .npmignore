@@ -1,5 +1,7 @@
 src
 build/
+.github/
+node_modules/
 rollup.config.js
 tsconfig.json
 vitest.config.ts
